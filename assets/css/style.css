@@ -14,8 +14,9 @@
     box-sizing: border-box;
 }
 
-head body {
+html {
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 /* Header Style Starts*/
@@ -53,13 +54,13 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 15px 20px;
+    padding: 15px 25px;
     font-size: 1.5rem;   
 }
 
 header nav ul li a:hover {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 
@@ -72,7 +73,7 @@ header nav ul li a:hover {
     background: #B3FFAB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 0 0 75% 75% / 20%;
+    border-radius: 75% 75% 75% 75% / 20%;
     height: 500px;
 }
 
@@ -152,7 +153,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .item-1 {
@@ -206,7 +207,7 @@ button:hover{
 /* Project Section Style Starts*/
 .project {
     background: var(--main-color);
-    border-radius: 75% 75% 0 0 / 20%;
+    border-radius: 75% 75% 75% 75% / 20%;
 }
 .figure-img {
     width: 100%;    
@@ -230,6 +231,7 @@ button:hover{
     display: flex;
     justify-content: center;
     background: var(--secondary-color);
+    border-radius: 75% 75% 75% 75% / 20%;
 }
 
 .contact-info h3 {
@@ -248,6 +250,7 @@ button:hover{
     display:flex;
     justify-content: center;
     background: var(--main-color);
+    border-radius: 75% 75% 75% 75% / 20%;
 }
 
 .social-links a {
@@ -271,6 +274,7 @@ button:hover{
     display: flex;
     justify-content: center;
     background-color: var(--main-color);
+    border-radius: 75% 75% 75% 75% / 20%;
 }
 
 .back-to-top {
@@ -292,7 +296,9 @@ footer {
     justify-content: space-between;
     width: 100%;
     padding: 40px;
-    background: var(--secondary-color);
+    background: #B3FFAB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Dancing Script', cursive;
 }
 
