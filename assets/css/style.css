@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+head body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Header Style Starts*/
 
 header {
@@ -22,9 +26,14 @@ header {
     padding: 20px 35px;
     flex-wrap: wrap;
     z-index: 999;
-    background: var(--main-color);
-    
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
+    background: #B3FFAB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
 }
 
 header h1 {
@@ -64,34 +73,40 @@ header nav ul li a {
     background: #B3FFAB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #12FFF7, #B3FFAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 0 0 75% 75% / 30%;
+    border-radius: 0 0 75% 75% / 20%;
     height: 500px;
 }
 
 .hero-content {
     text-align: center;
     padding-top: 95px;
-    
+    font-size: 20px;
 }
 
 .hero h1 {
     font-size: 70px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .hero h3 {
     font-size: 40px;
+    font-family: 'Dancing Script', cursive;
 }
 
-.hero button {
+/* Button Styles */
+
+button {
 	border: none;
 	outline: none;
 	padding: 10px 20px;
 	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
+    color:black;
+    font-weight: bold;
+	background:var(--secondary-color);
+    margin-bottom: 50px;
+    text-transform: uppercase;	
 }
+
 button:hover{
 	cursor: pointer;
 }
@@ -107,7 +122,6 @@ button:hover{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 35px;
-
 }
 
 .about-me-image {
@@ -118,6 +132,8 @@ button:hover{
 .about-me-content {
     width: 45%;
     padding: 15px;
+    font-size: 22px;
+    color: var(--third-color);
 }
 
 .about-me img {
@@ -145,7 +161,6 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: aquamarine;
     
 }
 
@@ -198,7 +213,10 @@ button:hover{
 /* Grid Layout Style Ends*/
 
 /* Project Section Style Starts*/
-
+.project {
+    background: var(--main-color);
+    border-radius: 75% 75% 0 0 / 20%;
+}
 .figure-img {
     width: 100%;
       
@@ -206,21 +224,12 @@ button:hover{
 .figure-img-2 {
     width: 100%;   
 }
-.project button {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
-}
 
 .project h5 {
     align-items: center;
     font-size: 35px;
     font-weight: bold;
+    font-family: 'Dancing Script', cursive;
 }
 
 .item-1 img {
@@ -235,14 +244,15 @@ button:hover{
 .contact {
     display: flex;
     justify-content: center;
-    background-color: lawngreen;
-    margin-top: 20px;
+    background: var(--secondary-color);
+   
 }
 
 .contact-info h3 {
     font-size: 40px;
     text-align: center;
     padding: 15px 0;
+    font-family: 'Dancing Script', cursive;
 }
 
 .contact-info p {
@@ -253,7 +263,7 @@ button:hover{
 .social {
     display:flex;
     justify-content: center;
-    background-color: lightblue;
+    background: var(--main-color);
 }
 
 .social-links a {
@@ -271,6 +281,7 @@ button:hover{
 .top {
     display: flex;
     justify-content: center;
+    background-color: var(--main-color);
 }
 
 .back-to-top {
@@ -289,6 +300,8 @@ footer {
     justify-content: space-between;
     width: 100%;
     padding: 40px;
+    background: var(--secondary-color);
+    font-family: 'Dancing Script', cursive;
 }
 
 footer p {
@@ -332,11 +345,68 @@ footer p {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(12, 2fr);
-        
-        
+    .item-1 {
+        grid-column: 1/11;
+        grid-row: 1/2;
+    }
+    
+    .item-2 {
+        grid-column: 1/11;
+        grid-row: 2/4;
+        padding-left: 10px;
+    }
+    
+    .item-3 {
+        grid-column: 5/6;
+        grid-row: 4;
+    }
+    
+    
+    .item-5 {
+        grid-column: 1/11;
+        grid-row: 5;
+    }
+    
+    .item-6 {
+        grid-column: 1/11;
+        grid-row: 5/8;
+    }
+    
+    .item-7 {
+        grid-column: 5/6;
+        grid-row: 7;
+    }
+    
+    
+    .item-9 {
+        grid-column: 1/11;
+        grid-row: 8;
+    }
+    
+    .item-10 {
+        grid-column: 1/11;
+        grid-row: 8/11;
+    }
+    
+    .item-11 {
+        grid-column: 5/6;
+        grid-row: 10;
     }
 
 
 }
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .hero-content {
+        width:95%;
+    }
+    .contact-info {
+        width: 95%;
+    }
+    .about-me img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  }
