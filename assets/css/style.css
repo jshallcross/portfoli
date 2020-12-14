@@ -234,6 +234,7 @@ button:hover{
 .contact {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background: var(--secondary-color);
     border-radius: 75% 75% 75% 75% / 20%;
 }
