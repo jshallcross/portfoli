@@ -1,4 +1,4 @@
-# Portfoli
+# Portfolio
 Web Developer Portfolio
 
 Portfolio Website for Jon Shallcross. 
@@ -14,7 +14,7 @@ See Code button links to Github repositories
 HTML, CSS, FlexBox, CSS Grids
 
 ## Screenshot
-![ScreenShot of Jon Shallcross' Porfolio Website](./assets/images/portfolio-screenshot.png)
+![ScreenShot of Jon Shallcross' Portfolio Website](./assets/images/portfolio-screenshot.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
